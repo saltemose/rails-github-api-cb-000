@@ -9,4 +9,6 @@ class SessionsController < ApplicationController
       req.body = { 'client_id': client_id, 'client_secret': client_secret, 'code': code }
       req.headers = ['Accept'] = 'application/json'
     end
+
+    body = JSON.parse(resp.body)
 end
