@@ -13,5 +13,5 @@ class RepositoriesController < ApplicationController
     end
 
     @repos_data = JSON.parse(repos.body)
-
+  end 
 end
